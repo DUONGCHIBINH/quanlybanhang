@@ -68,8 +68,10 @@
             this.label_hh_mancc = new System.Windows.Forms.Label();
             this.comboBox_hh_tennhom = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_hh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_bh)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label_hh_masp
@@ -78,7 +80,7 @@
             this.label_hh_masp.BackColor = System.Drawing.Color.Transparent;
             this.label_hh_masp.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_hh_masp.ForeColor = System.Drawing.Color.Brown;
-            this.label_hh_masp.Location = new System.Drawing.Point(4, 39);
+            this.label_hh_masp.Location = new System.Drawing.Point(30, 19);
             this.label_hh_masp.Name = "label_hh_masp";
             this.label_hh_masp.Size = new System.Drawing.Size(135, 24);
             this.label_hh_masp.TabIndex = 40;
@@ -86,6 +88,7 @@
             // 
             // button_hh_huybo
             // 
+            this.button_hh_huybo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button_hh_huybo.BackColor = System.Drawing.Color.Transparent;
             this.button_hh_huybo.FlatAppearance.BorderColor = System.Drawing.Color.Tan;
             this.button_hh_huybo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -95,7 +98,7 @@
             this.button_hh_huybo.ForeColor = System.Drawing.Color.Lime;
             this.button_hh_huybo.Image = global::UI.Properties.Resources._1439854729_DeleteRed;
             this.button_hh_huybo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_hh_huybo.Location = new System.Drawing.Point(1120, 215);
+            this.button_hh_huybo.Location = new System.Drawing.Point(1158, 215);
             this.button_hh_huybo.Name = "button_hh_huybo";
             this.button_hh_huybo.Size = new System.Drawing.Size(121, 47);
             this.button_hh_huybo.TabIndex = 35;
@@ -106,6 +109,7 @@
             // 
             // button_hh_sua
             // 
+            this.button_hh_sua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button_hh_sua.BackColor = System.Drawing.Color.Transparent;
             this.button_hh_sua.FlatAppearance.BorderColor = System.Drawing.Color.Tan;
             this.button_hh_sua.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -115,7 +119,7 @@
             this.button_hh_sua.ForeColor = System.Drawing.Color.Lime;
             this.button_hh_sua.Image = global::UI.Properties.Resources._48px_Crystal_Clear_app_package_settings;
             this.button_hh_sua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_hh_sua.Location = new System.Drawing.Point(879, 213);
+            this.button_hh_sua.Location = new System.Drawing.Point(917, 213);
             this.button_hh_sua.Name = "button_hh_sua";
             this.button_hh_sua.Size = new System.Drawing.Size(115, 47);
             this.button_hh_sua.TabIndex = 33;
@@ -153,10 +157,11 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView_hh.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView_hh.Location = new System.Drawing.Point(-1, 270);
+            this.dataGridView_hh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView_hh.Location = new System.Drawing.Point(0, 290);
             this.dataGridView_hh.Name = "dataGridView_hh";
             this.dataGridView_hh.ReadOnly = true;
-            this.dataGridView_hh.Size = new System.Drawing.Size(1353, 464);
+            this.dataGridView_hh.Size = new System.Drawing.Size(1385, 445);
             this.dataGridView_hh.TabIndex = 30;
             this.dataGridView_hh.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_hh_CellContentClick);
             this.dataGridView_hh.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView_hh_CellMouseClick);
@@ -234,7 +239,7 @@
             this.label_hh_mn.BackColor = System.Drawing.Color.Transparent;
             this.label_hh_mn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_hh_mn.ForeColor = System.Drawing.Color.Brown;
-            this.label_hh_mn.Location = new System.Drawing.Point(4, 144);
+            this.label_hh_mn.Location = new System.Drawing.Point(30, 124);
             this.label_hh_mn.Name = "label_hh_mn";
             this.label_hh_mn.Size = new System.Drawing.Size(97, 24);
             this.label_hh_mn.TabIndex = 50;
@@ -246,7 +251,7 @@
             this.label_hh_tsp.BackColor = System.Drawing.Color.Transparent;
             this.label_hh_tsp.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_hh_tsp.ForeColor = System.Drawing.Color.Brown;
-            this.label_hh_tsp.Location = new System.Drawing.Point(4, 94);
+            this.label_hh_tsp.Location = new System.Drawing.Point(30, 74);
             this.label_hh_tsp.Name = "label_hh_tsp";
             this.label_hh_tsp.Size = new System.Drawing.Size(144, 24);
             this.label_hh_tsp.TabIndex = 51;
@@ -258,7 +263,7 @@
             this.label_hh_dvt.BackColor = System.Drawing.Color.Transparent;
             this.label_hh_dvt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_hh_dvt.ForeColor = System.Drawing.Color.Brown;
-            this.label_hh_dvt.Location = new System.Drawing.Point(741, 39);
+            this.label_hh_dvt.Location = new System.Drawing.Point(767, 19);
             this.label_hh_dvt.Name = "label_hh_dvt";
             this.label_hh_dvt.Size = new System.Drawing.Size(109, 24);
             this.label_hh_dvt.TabIndex = 52;
@@ -270,7 +275,7 @@
             this.label_hh_hsd.BackColor = System.Drawing.Color.Transparent;
             this.label_hh_hsd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_hh_hsd.ForeColor = System.Drawing.Color.Brown;
-            this.label_hh_hsd.Location = new System.Drawing.Point(425, 91);
+            this.label_hh_hsd.Location = new System.Drawing.Point(451, 71);
             this.label_hh_hsd.Name = "label_hh_hsd";
             this.label_hh_hsd.Size = new System.Drawing.Size(94, 24);
             this.label_hh_hsd.TabIndex = 55;
@@ -282,7 +287,7 @@
             this.label_HH_NSX.BackColor = System.Drawing.Color.Transparent;
             this.label_HH_NSX.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_HH_NSX.ForeColor = System.Drawing.Color.Brown;
-            this.label_HH_NSX.Location = new System.Drawing.Point(425, 39);
+            this.label_HH_NSX.Location = new System.Drawing.Point(451, 19);
             this.label_HH_NSX.Name = "label_HH_NSX";
             this.label_HH_NSX.Size = new System.Drawing.Size(82, 24);
             this.label_HH_NSX.TabIndex = 56;
@@ -290,6 +295,7 @@
             // 
             // button_hh_luu
             // 
+            this.button_hh_luu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button_hh_luu.BackColor = System.Drawing.Color.Transparent;
             this.button_hh_luu.FlatAppearance.BorderColor = System.Drawing.Color.Tan;
             this.button_hh_luu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -299,7 +305,7 @@
             this.button_hh_luu.ForeColor = System.Drawing.Color.Lime;
             this.button_hh_luu.Image = global::UI.Properties.Resources.Save_as_icon;
             this.button_hh_luu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_hh_luu.Location = new System.Drawing.Point(754, 215);
+            this.button_hh_luu.Location = new System.Drawing.Point(792, 215);
             this.button_hh_luu.Name = "button_hh_luu";
             this.button_hh_luu.Size = new System.Drawing.Size(119, 47);
             this.button_hh_luu.TabIndex = 57;
@@ -310,6 +316,7 @@
             // 
             // button_hh_tc
             // 
+            this.button_hh_tc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button_hh_tc.BackColor = System.Drawing.Color.Transparent;
             this.button_hh_tc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_hh_tc.FlatAppearance.BorderColor = System.Drawing.Color.Tan;
@@ -319,7 +326,7 @@
             this.button_hh_tc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_hh_tc.ForeColor = System.Drawing.Color.Lime;
             this.button_hh_tc.Image = global::UI.Properties.Resources._48px_Crystal_Clear_action_reload;
-            this.button_hh_tc.Location = new System.Drawing.Point(1250, 215);
+            this.button_hh_tc.Location = new System.Drawing.Point(1288, 215);
             this.button_hh_tc.Name = "button_hh_tc";
             this.button_hh_tc.Size = new System.Drawing.Size(85, 49);
             this.button_hh_tc.TabIndex = 60;
@@ -337,7 +344,7 @@
             this.comboBox_hh_manhom.FormattingEnabled = true;
             this.comboBox_hh_manhom.IntegralHeight = false;
             this.comboBox_hh_manhom.ItemHeight = 24;
-            this.comboBox_hh_manhom.Location = new System.Drawing.Point(154, 144);
+            this.comboBox_hh_manhom.Location = new System.Drawing.Point(180, 124);
             this.comboBox_hh_manhom.Name = "comboBox_hh_manhom";
             this.comboBox_hh_manhom.Size = new System.Drawing.Size(260, 32);
             this.comboBox_hh_manhom.TabIndex = 61;
@@ -351,7 +358,7 @@
             this.comboBox_hh_tensp.FormattingEnabled = true;
             this.comboBox_hh_tensp.IntegralHeight = false;
             this.comboBox_hh_tensp.ItemHeight = 24;
-            this.comboBox_hh_tensp.Location = new System.Drawing.Point(154, 91);
+            this.comboBox_hh_tensp.Location = new System.Drawing.Point(180, 71);
             this.comboBox_hh_tensp.Name = "comboBox_hh_tensp";
             this.comboBox_hh_tensp.Size = new System.Drawing.Size(260, 32);
             this.comboBox_hh_tensp.TabIndex = 62;
@@ -365,7 +372,7 @@
             this.comboBox_hh_gn.FormattingEnabled = true;
             this.comboBox_hh_gn.IntegralHeight = false;
             this.comboBox_hh_gn.ItemHeight = 24;
-            this.comboBox_hh_gn.Location = new System.Drawing.Point(537, 91);
+            this.comboBox_hh_gn.Location = new System.Drawing.Point(563, 71);
             this.comboBox_hh_gn.Name = "comboBox_hh_gn";
             this.comboBox_hh_gn.Size = new System.Drawing.Size(184, 32);
             this.comboBox_hh_gn.TabIndex = 64;
@@ -381,7 +388,7 @@
             this.comboBox_hh_gb.FormattingEnabled = true;
             this.comboBox_hh_gb.IntegralHeight = false;
             this.comboBox_hh_gb.ItemHeight = 24;
-            this.comboBox_hh_gb.Location = new System.Drawing.Point(536, 39);
+            this.comboBox_hh_gb.Location = new System.Drawing.Point(562, 19);
             this.comboBox_hh_gb.Name = "comboBox_hh_gb";
             this.comboBox_hh_gb.Size = new System.Drawing.Size(185, 32);
             this.comboBox_hh_gb.TabIndex = 65;
@@ -396,7 +403,7 @@
             this.comboBox_hh_dvt.FormattingEnabled = true;
             this.comboBox_hh_dvt.IntegralHeight = false;
             this.comboBox_hh_dvt.ItemHeight = 24;
-            this.comboBox_hh_dvt.Location = new System.Drawing.Point(894, 39);
+            this.comboBox_hh_dvt.Location = new System.Drawing.Point(920, 19);
             this.comboBox_hh_dvt.Name = "comboBox_hh_dvt";
             this.comboBox_hh_dvt.Size = new System.Drawing.Size(99, 32);
             this.comboBox_hh_dvt.TabIndex = 67;
@@ -413,7 +420,7 @@
             this.comboBox_hh_masp.FormattingEnabled = true;
             this.comboBox_hh_masp.IntegralHeight = false;
             this.comboBox_hh_masp.ItemHeight = 24;
-            this.comboBox_hh_masp.Location = new System.Drawing.Point(154, 39);
+            this.comboBox_hh_masp.Location = new System.Drawing.Point(180, 19);
             this.comboBox_hh_masp.Name = "comboBox_hh_masp";
             this.comboBox_hh_masp.Size = new System.Drawing.Size(260, 32);
             this.comboBox_hh_masp.TabIndex = 69;
@@ -427,7 +434,7 @@
             this.comboBox_hh_slt.FormattingEnabled = true;
             this.comboBox_hh_slt.IntegralHeight = false;
             this.comboBox_hh_slt.ItemHeight = 24;
-            this.comboBox_hh_slt.Location = new System.Drawing.Point(894, 96);
+            this.comboBox_hh_slt.Location = new System.Drawing.Point(920, 76);
             this.comboBox_hh_slt.Name = "comboBox_hh_slt";
             this.comboBox_hh_slt.Size = new System.Drawing.Size(99, 32);
             this.comboBox_hh_slt.TabIndex = 70;
@@ -439,7 +446,7 @@
             this.label_hh_slt.BackColor = System.Drawing.Color.Transparent;
             this.label_hh_slt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_hh_slt.ForeColor = System.Drawing.Color.Brown;
-            this.label_hh_slt.Location = new System.Drawing.Point(741, 96);
+            this.label_hh_slt.Location = new System.Drawing.Point(767, 76);
             this.label_hh_slt.Name = "label_hh_slt";
             this.label_hh_slt.Size = new System.Drawing.Size(135, 24);
             this.label_hh_slt.TabIndex = 71;
@@ -456,7 +463,7 @@
             this.comboBox_timkiem.FormattingEnabled = true;
             this.comboBox_timkiem.IntegralHeight = false;
             this.comboBox_timkiem.ItemHeight = 24;
-            this.comboBox_timkiem.Location = new System.Drawing.Point(122, 224);
+            this.comboBox_timkiem.Location = new System.Drawing.Point(148, 204);
             this.comboBox_timkiem.Name = "comboBox_timkiem";
             this.comboBox_timkiem.Size = new System.Drawing.Size(385, 32);
             this.comboBox_timkiem.TabIndex = 72;
@@ -468,7 +475,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Lime;
-            this.label1.Location = new System.Drawing.Point(9, 227);
+            this.label1.Location = new System.Drawing.Point(35, 207);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 24);
             this.label1.TabIndex = 73;
@@ -482,7 +489,7 @@
             this.button_timkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_timkiem.ForeColor = System.Drawing.Color.Red;
             this.button_timkiem.Image = global::UI.Properties.Resources._1438980118_search_icon_tm;
-            this.button_timkiem.Location = new System.Drawing.Point(526, 218);
+            this.button_timkiem.Location = new System.Drawing.Point(552, 198);
             this.button_timkiem.Name = "button_timkiem";
             this.button_timkiem.Size = new System.Drawing.Size(75, 43);
             this.button_timkiem.TabIndex = 74;
@@ -491,10 +498,11 @@
             // 
             // pictureBox_bh
             // 
+            this.pictureBox_bh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox_bh.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox_bh.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox_bh.Image = global::UI.Properties.Resources.coollogo_com_289623578;
-            this.pictureBox_bh.Location = new System.Drawing.Point(1009, 12);
+            this.pictureBox_bh.Location = new System.Drawing.Point(1047, 12);
             this.pictureBox_bh.Name = "pictureBox_bh";
             this.pictureBox_bh.Size = new System.Drawing.Size(326, 177);
             this.pictureBox_bh.TabIndex = 75;
@@ -502,6 +510,7 @@
             // 
             // button_hh_them
             // 
+            this.button_hh_them.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button_hh_them.BackColor = System.Drawing.Color.Transparent;
             this.button_hh_them.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_hh_them.FlatAppearance.BorderColor = System.Drawing.Color.Tan;
@@ -512,7 +521,7 @@
             this.button_hh_them.ForeColor = System.Drawing.Color.Lime;
             this.button_hh_them.Image = global::UI.Properties.Resources._48px_Crystal_Clear_action_db_add;
             this.button_hh_them.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_hh_them.Location = new System.Drawing.Point(626, 215);
+            this.button_hh_them.Location = new System.Drawing.Point(664, 215);
             this.button_hh_them.Name = "button_hh_them";
             this.button_hh_them.Size = new System.Drawing.Size(122, 47);
             this.button_hh_them.TabIndex = 76;
@@ -523,6 +532,7 @@
             // 
             // button_hh_xoa
             // 
+            this.button_hh_xoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button_hh_xoa.BackColor = System.Drawing.Color.Transparent;
             this.button_hh_xoa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_hh_xoa.FlatAppearance.BorderColor = System.Drawing.Color.Tan;
@@ -533,7 +543,7 @@
             this.button_hh_xoa.ForeColor = System.Drawing.Color.Lime;
             this.button_hh_xoa.Image = global::UI.Properties.Resources._1439855765_1_04;
             this.button_hh_xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_hh_xoa.Location = new System.Drawing.Point(1000, 214);
+            this.button_hh_xoa.Location = new System.Drawing.Point(1038, 214);
             this.button_hh_xoa.Name = "button_hh_xoa";
             this.button_hh_xoa.Size = new System.Drawing.Size(114, 46);
             this.button_hh_xoa.TabIndex = 77;
@@ -553,7 +563,7 @@
             this.comboBox_hh_mancc.FormattingEnabled = true;
             this.comboBox_hh_mancc.IntegralHeight = false;
             this.comboBox_hh_mancc.ItemHeight = 24;
-            this.comboBox_hh_mancc.Location = new System.Drawing.Point(834, 144);
+            this.comboBox_hh_mancc.Location = new System.Drawing.Point(860, 124);
             this.comboBox_hh_mancc.Name = "comboBox_hh_mancc";
             this.comboBox_hh_mancc.Size = new System.Drawing.Size(160, 32);
             this.comboBox_hh_mancc.TabIndex = 78;
@@ -564,7 +574,7 @@
             this.label_hh_mancc.BackColor = System.Drawing.Color.Transparent;
             this.label_hh_mancc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_hh_mancc.ForeColor = System.Drawing.Color.Brown;
-            this.label_hh_mancc.Location = new System.Drawing.Point(741, 152);
+            this.label_hh_mancc.Location = new System.Drawing.Point(767, 132);
             this.label_hh_mancc.Name = "label_hh_mancc";
             this.label_hh_mancc.Size = new System.Drawing.Size(87, 24);
             this.label_hh_mancc.TabIndex = 79;
@@ -580,7 +590,7 @@
             this.comboBox_hh_tennhom.FormattingEnabled = true;
             this.comboBox_hh_tennhom.IntegralHeight = false;
             this.comboBox_hh_tennhom.ItemHeight = 24;
-            this.comboBox_hh_tennhom.Location = new System.Drawing.Point(537, 144);
+            this.comboBox_hh_tennhom.Location = new System.Drawing.Point(563, 124);
             this.comboBox_hh_tennhom.Name = "comboBox_hh_tennhom";
             this.comboBox_hh_tennhom.Size = new System.Drawing.Size(184, 32);
             this.comboBox_hh_tennhom.TabIndex = 80;
@@ -591,48 +601,56 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Brown;
-            this.label2.Location = new System.Drawing.Point(425, 147);
+            this.label2.Location = new System.Drawing.Point(451, 127);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 24);
             this.label2.TabIndex = 81;
             this.label2.Text = "Tên nhóm";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label_hh_masp);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.button_hh_sua);
+            this.panel1.Controls.Add(this.comboBox_hh_tennhom);
+            this.panel1.Controls.Add(this.button_hh_huybo);
+            this.panel1.Controls.Add(this.label_hh_mancc);
+            this.panel1.Controls.Add(this.label_hh_mn);
+            this.panel1.Controls.Add(this.comboBox_hh_mancc);
+            this.panel1.Controls.Add(this.label_hh_tsp);
+            this.panel1.Controls.Add(this.button_hh_xoa);
+            this.panel1.Controls.Add(this.label_hh_dvt);
+            this.panel1.Controls.Add(this.button_hh_them);
+            this.panel1.Controls.Add(this.label_hh_hsd);
+            this.panel1.Controls.Add(this.pictureBox_bh);
+            this.panel1.Controls.Add(this.label_HH_NSX);
+            this.panel1.Controls.Add(this.button_timkiem);
+            this.panel1.Controls.Add(this.button_hh_luu);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.button_hh_tc);
+            this.panel1.Controls.Add(this.comboBox_timkiem);
+            this.panel1.Controls.Add(this.comboBox_hh_manhom);
+            this.panel1.Controls.Add(this.label_hh_slt);
+            this.panel1.Controls.Add(this.comboBox_hh_tensp);
+            this.panel1.Controls.Add(this.comboBox_hh_slt);
+            this.panel1.Controls.Add(this.comboBox_hh_gn);
+            this.panel1.Controls.Add(this.comboBox_hh_masp);
+            this.panel1.Controls.Add(this.comboBox_hh_gb);
+            this.panel1.Controls.Add(this.comboBox_hh_dvt);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1385, 290);
+            this.panel1.TabIndex = 82;
+            // 
             // HangHoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::UI.Properties.Resources.gray;
-            this.ClientSize = new System.Drawing.Size(1347, 730);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox_hh_tennhom);
-            this.Controls.Add(this.label_hh_mancc);
-            this.Controls.Add(this.comboBox_hh_mancc);
-            this.Controls.Add(this.button_hh_xoa);
-            this.Controls.Add(this.button_hh_them);
-            this.Controls.Add(this.pictureBox_bh);
-            this.Controls.Add(this.button_timkiem);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox_timkiem);
-            this.Controls.Add(this.label_hh_slt);
-            this.Controls.Add(this.comboBox_hh_slt);
-            this.Controls.Add(this.comboBox_hh_masp);
-            this.Controls.Add(this.comboBox_hh_dvt);
-            this.Controls.Add(this.comboBox_hh_gb);
-            this.Controls.Add(this.comboBox_hh_gn);
-            this.Controls.Add(this.comboBox_hh_tensp);
-            this.Controls.Add(this.comboBox_hh_manhom);
-            this.Controls.Add(this.button_hh_tc);
-            this.Controls.Add(this.button_hh_luu);
-            this.Controls.Add(this.label_HH_NSX);
-            this.Controls.Add(this.label_hh_hsd);
-            this.Controls.Add(this.label_hh_dvt);
-            this.Controls.Add(this.label_hh_tsp);
-            this.Controls.Add(this.label_hh_mn);
-            this.Controls.Add(this.label_hh_masp);
-            this.Controls.Add(this.button_hh_huybo);
-            this.Controls.Add(this.button_hh_sua);
+            this.ClientSize = new System.Drawing.Size(1385, 735);
             this.Controls.Add(this.dataGridView_hh);
+            this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "HangHoa";
             this.Text = "HÀNG HÓA";
@@ -640,8 +658,9 @@
             this.Click += new System.EventHandler(this.button_hh_huybo_Click);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_hh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_bh)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -684,5 +703,6 @@
         private System.Windows.Forms.Label label_hh_mancc;
         private System.Windows.Forms.ComboBox comboBox_hh_tennhom;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel1;
     }
 }

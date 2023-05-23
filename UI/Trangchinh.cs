@@ -129,7 +129,7 @@ namespace UI
 
         private void nhaphang_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            this.Hide();
+            //this.Hide();
             NhapHang nh = new NhapHang();
             nh.ShowDialog();
         }

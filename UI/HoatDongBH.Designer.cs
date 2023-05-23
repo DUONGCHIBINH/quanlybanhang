@@ -49,9 +49,11 @@
             this.button_hdbh_quaylai = new System.Windows.Forms.Button();
             this.CHI_TIET_HDBANTableAdapter = new UI.BHTableAdapters.CHI_TIET_HDBANTableAdapter();
             this.CHI_TIET_PNTableAdapter = new UI.BHTableAdapters.CHI_TIET_PNTableAdapter();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.CHI_TIET_PNBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CHI_TIET_HDBANBindingSource)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // CHI_TIET_PNBindingSource
@@ -78,7 +80,7 @@
             this.comboBox_tim_masp.FormattingEnabled = true;
             this.comboBox_tim_masp.IntegralHeight = false;
             this.comboBox_tim_masp.ItemHeight = 24;
-            this.comboBox_tim_masp.Location = new System.Drawing.Point(304, 43);
+            this.comboBox_tim_masp.Location = new System.Drawing.Point(276, 42);
             this.comboBox_tim_masp.Name = "comboBox_tim_masp";
             this.comboBox_tim_masp.Size = new System.Drawing.Size(192, 32);
             this.comboBox_tim_masp.TabIndex = 61;
@@ -86,11 +88,12 @@
             // 
             // radioButton_nh
             // 
+            this.radioButton_nh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton_nh.AutoSize = true;
             this.radioButton_nh.BackColor = System.Drawing.Color.Transparent;
             this.radioButton_nh.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton_nh.ForeColor = System.Drawing.Color.Chartreuse;
-            this.radioButton_nh.Location = new System.Drawing.Point(936, 4);
+            this.radioButton_nh.Location = new System.Drawing.Point(878, 11);
             this.radioButton_nh.Name = "radioButton_nh";
             this.radioButton_nh.Size = new System.Drawing.Size(293, 29);
             this.radioButton_nh.TabIndex = 59;
@@ -101,11 +104,12 @@
             // 
             // radioButton_bh
             // 
+            this.radioButton_bh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton_bh.AutoSize = true;
             this.radioButton_bh.BackColor = System.Drawing.Color.Transparent;
             this.radioButton_bh.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton_bh.ForeColor = System.Drawing.Color.Chartreuse;
-            this.radioButton_bh.Location = new System.Drawing.Point(936, 47);
+            this.radioButton_bh.Location = new System.Drawing.Point(878, 54);
             this.radioButton_bh.Name = "radioButton_bh";
             this.radioButton_bh.Size = new System.Drawing.Size(280, 29);
             this.radioButton_bh.TabIndex = 58;
@@ -123,7 +127,7 @@
             this.comboBox_tim_mahd.FormattingEnabled = true;
             this.comboBox_tim_mahd.IntegralHeight = false;
             this.comboBox_tim_mahd.ItemHeight = 24;
-            this.comboBox_tim_mahd.Location = new System.Drawing.Point(57, 42);
+            this.comboBox_tim_mahd.Location = new System.Drawing.Point(29, 41);
             this.comboBox_tim_mahd.Name = "comboBox_tim_mahd";
             this.comboBox_tim_mahd.Size = new System.Drawing.Size(192, 32);
             this.comboBox_tim_mahd.TabIndex = 60;
@@ -132,13 +136,14 @@
             // reportViewer_nh
             // 
             this.reportViewer_nh.BackColor = System.Drawing.Color.Gainsboro;
+            this.reportViewer_nh.Dock = System.Windows.Forms.DockStyle.Fill;
             reportDataSource1.Name = "HDNH";
             reportDataSource1.Value = this.CHI_TIET_PNBindingSource;
             this.reportViewer_nh.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer_nh.LocalReport.ReportEmbeddedResource = "UI.HDNH.rdlc";
-            this.reportViewer_nh.Location = new System.Drawing.Point(-4, 99);
+            this.reportViewer_nh.Location = new System.Drawing.Point(0, 98);
             this.reportViewer_nh.Name = "reportViewer_nh";
-            this.reportViewer_nh.Size = new System.Drawing.Size(1359, 635);
+            this.reportViewer_nh.Size = new System.Drawing.Size(1316, 632);
             this.reportViewer_nh.TabIndex = 57;
             this.reportViewer_nh.Load += new System.EventHandler(this.reportViewer_nh_Load);
             // 
@@ -148,7 +153,7 @@
             this.dateTimePicker_hdbh_dt.CustomFormat = "dd/MM/yyyy";
             this.dateTimePicker_hdbh_dt.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker_hdbh_dt.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker_hdbh_dt.Location = new System.Drawing.Point(545, 42);
+            this.dateTimePicker_hdbh_dt.Location = new System.Drawing.Point(517, 41);
             this.dateTimePicker_hdbh_dt.Name = "dateTimePicker_hdbh_dt";
             this.dateTimePicker_hdbh_dt.Size = new System.Drawing.Size(200, 35);
             this.dateTimePicker_hdbh_dt.TabIndex = 56;
@@ -161,9 +166,9 @@
             this.label_dt.BackColor = System.Drawing.Color.Transparent;
             this.label_dt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_dt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label_dt.Location = new System.Drawing.Point(585, 23);
+            this.label_dt.Location = new System.Drawing.Point(557, 22);
             this.label_dt.Name = "label_dt";
-            this.label_dt.Size = new System.Drawing.Size(96, 16);
+            this.label_dt.Size = new System.Drawing.Size(95, 16);
             this.label_dt.TabIndex = 55;
             this.label_dt.Text = "THEO NGÀY";
             // 
@@ -175,7 +180,7 @@
             this.button_hdbh_lochd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_hdbh_lochd.ForeColor = System.Drawing.Color.Red;
             this.button_hdbh_lochd.Image = global::UI.Properties.Resources._1438980118_search_icon_tm;
-            this.button_hdbh_lochd.Location = new System.Drawing.Point(780, 37);
+            this.button_hdbh_lochd.Location = new System.Drawing.Point(752, 36);
             this.button_hdbh_lochd.Name = "button_hdbh_lochd";
             this.button_hdbh_lochd.Size = new System.Drawing.Size(75, 43);
             this.button_hdbh_lochd.TabIndex = 52;
@@ -184,13 +189,14 @@
             // 
             // reportViewer_bh
             // 
+            this.reportViewer_bh.Dock = System.Windows.Forms.DockStyle.Fill;
             reportDataSource2.Name = "HDBH";
             reportDataSource2.Value = this.CHI_TIET_HDBANBindingSource;
             this.reportViewer_bh.LocalReport.DataSources.Add(reportDataSource2);
             this.reportViewer_bh.LocalReport.ReportEmbeddedResource = "UI.HDBH.rdlc";
-            this.reportViewer_bh.Location = new System.Drawing.Point(-4, 99);
+            this.reportViewer_bh.Location = new System.Drawing.Point(0, 98);
             this.reportViewer_bh.Name = "reportViewer_bh";
-            this.reportViewer_bh.Size = new System.Drawing.Size(1359, 627);
+            this.reportViewer_bh.Size = new System.Drawing.Size(1316, 632);
             this.reportViewer_bh.TabIndex = 51;
             // 
             // label_sp
@@ -199,9 +205,9 @@
             this.label_sp.BackColor = System.Drawing.Color.Transparent;
             this.label_sp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_sp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label_sp.Location = new System.Drawing.Point(327, 23);
+            this.label_sp.Location = new System.Drawing.Point(299, 22);
             this.label_sp.Name = "label_sp";
-            this.label_sp.Size = new System.Drawing.Size(158, 16);
+            this.label_sp.Size = new System.Drawing.Size(157, 16);
             this.label_sp.TabIndex = 54;
             this.label_sp.Text = "THEO MÃ SẢN PHẨM";
             // 
@@ -211,14 +217,15 @@
             this.label_hdbh_timma.BackColor = System.Drawing.Color.Transparent;
             this.label_hdbh_timma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_hdbh_timma.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label_hdbh_timma.Location = new System.Drawing.Point(88, 23);
+            this.label_hdbh_timma.Location = new System.Drawing.Point(60, 22);
             this.label_hdbh_timma.Name = "label_hdbh_timma";
-            this.label_hdbh_timma.Size = new System.Drawing.Size(148, 16);
+            this.label_hdbh_timma.Size = new System.Drawing.Size(147, 16);
             this.label_hdbh_timma.TabIndex = 53;
             this.label_hdbh_timma.Text = "THEO MÃ HÓA ĐƠN";
             // 
             // button_hdbh_quaylai
             // 
+            this.button_hdbh_quaylai.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button_hdbh_quaylai.BackColor = System.Drawing.Color.Transparent;
             this.button_hdbh_quaylai.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_hdbh_quaylai.FlatAppearance.BorderColor = System.Drawing.Color.Tan;
@@ -228,7 +235,7 @@
             this.button_hdbh_quaylai.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_hdbh_quaylai.ForeColor = System.Drawing.Color.Lime;
             this.button_hdbh_quaylai.Image = global::UI.Properties.Resources._48px_Crystal_Clear_action_reload;
-            this.button_hdbh_quaylai.Location = new System.Drawing.Point(1261, 4);
+            this.button_hdbh_quaylai.Location = new System.Drawing.Point(1203, 11);
             this.button_hdbh_quaylai.Name = "button_hdbh_quaylai";
             this.button_hdbh_quaylai.Size = new System.Drawing.Size(85, 55);
             this.button_hdbh_quaylai.TabIndex = 50;
@@ -243,24 +250,32 @@
             // 
             this.CHI_TIET_PNTableAdapter.ClearBeforeFill = true;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.comboBox_tim_mahd);
+            this.panel1.Controls.Add(this.comboBox_tim_masp);
+            this.panel1.Controls.Add(this.button_hdbh_quaylai);
+            this.panel1.Controls.Add(this.radioButton_nh);
+            this.panel1.Controls.Add(this.label_hdbh_timma);
+            this.panel1.Controls.Add(this.radioButton_bh);
+            this.panel1.Controls.Add(this.label_sp);
+            this.panel1.Controls.Add(this.button_hdbh_lochd);
+            this.panel1.Controls.Add(this.label_dt);
+            this.panel1.Controls.Add(this.dateTimePicker_hdbh_dt);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1316, 98);
+            this.panel1.TabIndex = 62;
+            // 
             // HoatDongBanHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::UI.Properties.Resources.gray;
-            this.ClientSize = new System.Drawing.Size(1350, 730);
-            this.Controls.Add(this.comboBox_tim_masp);
-            this.Controls.Add(this.radioButton_nh);
-            this.Controls.Add(this.radioButton_bh);
-            this.Controls.Add(this.comboBox_tim_mahd);
+            this.ClientSize = new System.Drawing.Size(1316, 730);
             this.Controls.Add(this.reportViewer_nh);
-            this.Controls.Add(this.dateTimePicker_hdbh_dt);
-            this.Controls.Add(this.label_dt);
-            this.Controls.Add(this.button_hdbh_lochd);
             this.Controls.Add(this.reportViewer_bh);
-            this.Controls.Add(this.label_sp);
-            this.Controls.Add(this.label_hdbh_timma);
-            this.Controls.Add(this.button_hdbh_quaylai);
+            this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "HoatDongBanHang";
             this.Text = "Hoạt động bán hàng";
@@ -268,8 +283,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.CHI_TIET_PNBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BH)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CHI_TIET_HDBANBindingSource)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -292,6 +308,6 @@
         private BHTableAdapters.CHI_TIET_HDBANTableAdapter CHI_TIET_HDBANTableAdapter;
         private System.Windows.Forms.BindingSource CHI_TIET_PNBindingSource;
         private BHTableAdapters.CHI_TIET_PNTableAdapter CHI_TIET_PNTableAdapter;
-
+        private System.Windows.Forms.Panel panel1;
     }
 }

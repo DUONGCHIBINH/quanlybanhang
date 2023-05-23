@@ -71,21 +71,15 @@
             this.radioButton_ktt = new System.Windows.Forms.RadioButton();
             this.comboBox_bh_tenkh = new System.Windows.Forms.ComboBox();
             this.button_bh_quaylai = new System.Windows.Forms.Button();
-            this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_bh)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView_bh
             // 
             this.dataGridView_bh.AllowUserToOrderColumns = true;
-            this.dataGridView_bh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView_bh.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
@@ -112,13 +106,14 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView_bh.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView_bh.Location = new System.Drawing.Point(-3, 279);
+            this.dataGridView_bh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView_bh.Location = new System.Drawing.Point(0, 280);
             this.dataGridView_bh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView_bh.Name = "dataGridView_bh";
             this.dataGridView_bh.ReadOnly = true;
             this.dataGridView_bh.RowHeadersWidth = 50;
             this.dataGridView_bh.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dataGridView_bh.Size = new System.Drawing.Size(1878, 1980);
+            this.dataGridView_bh.Size = new System.Drawing.Size(1442, 428);
             this.dataGridView_bh.TabIndex = 0;
             this.dataGridView_bh.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_bh_CellContentClick);
             this.dataGridView_bh.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView_bh_CellMouseClick);
@@ -186,6 +181,7 @@
             // 
             // button_bh_them
             // 
+            this.button_bh_them.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button_bh_them.BackColor = System.Drawing.Color.Transparent;
             this.button_bh_them.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_bh_them.FlatAppearance.BorderColor = System.Drawing.Color.Tan;
@@ -196,10 +192,10 @@
             this.button_bh_them.ForeColor = System.Drawing.Color.Lime;
             this.button_bh_them.Image = global::UI.Properties.Resources._48px_Crystal_Clear_action_db_add;
             this.button_bh_them.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_bh_them.Location = new System.Drawing.Point(1114, 9);
+            this.button_bh_them.Location = new System.Drawing.Point(1044, 19);
             this.button_bh_them.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button_bh_them.Name = "button_bh_them";
-            this.button_bh_them.Size = new System.Drawing.Size(171, 65);
+            this.button_bh_them.Size = new System.Drawing.Size(135, 65);
             this.button_bh_them.TabIndex = 1;
             this.button_bh_them.Text = "Thêm";
             this.button_bh_them.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -208,6 +204,7 @@
             // 
             // button_bh_sua
             // 
+            this.button_bh_sua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button_bh_sua.BackColor = System.Drawing.Color.Transparent;
             this.button_bh_sua.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_bh_sua.FlatAppearance.BorderColor = System.Drawing.Color.Tan;
@@ -218,10 +215,10 @@
             this.button_bh_sua.ForeColor = System.Drawing.Color.Lime;
             this.button_bh_sua.Image = global::UI.Properties.Resources._48px_Crystal_Clear_app_package_settings;
             this.button_bh_sua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_bh_sua.Location = new System.Drawing.Point(1479, 103);
+            this.button_bh_sua.Location = new System.Drawing.Point(1187, 89);
             this.button_bh_sua.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button_bh_sua.Name = "button_bh_sua";
-            this.button_bh_sua.Size = new System.Drawing.Size(171, 65);
+            this.button_bh_sua.Size = new System.Drawing.Size(135, 65);
             this.button_bh_sua.TabIndex = 2;
             this.button_bh_sua.Text = "Sửa";
             this.button_bh_sua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -230,6 +227,7 @@
             // 
             // button_bh_xoa
             // 
+            this.button_bh_xoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button_bh_xoa.BackColor = System.Drawing.Color.Transparent;
             this.button_bh_xoa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_bh_xoa.FlatAppearance.BorderColor = System.Drawing.Color.Tan;
@@ -240,10 +238,10 @@
             this.button_bh_xoa.ForeColor = System.Drawing.Color.Lime;
             this.button_bh_xoa.Image = global::UI.Properties.Resources._1439855765_1_041;
             this.button_bh_xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_bh_xoa.Location = new System.Drawing.Point(1479, 15);
+            this.button_bh_xoa.Location = new System.Drawing.Point(1187, 16);
             this.button_bh_xoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button_bh_xoa.Name = "button_bh_xoa";
-            this.button_bh_xoa.Size = new System.Drawing.Size(171, 68);
+            this.button_bh_xoa.Size = new System.Drawing.Size(135, 68);
             this.button_bh_xoa.TabIndex = 3;
             this.button_bh_xoa.Text = "Xóa";
             this.button_bh_xoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -310,7 +308,7 @@
             this.label_bh_mahoadon.BackColor = System.Drawing.Color.Transparent;
             this.label_bh_mahoadon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_bh_mahoadon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label_bh_mahoadon.Location = new System.Drawing.Point(20, 13);
+            this.label_bh_mahoadon.Location = new System.Drawing.Point(12, 9);
             this.label_bh_mahoadon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_bh_mahoadon.Name = "label_bh_mahoadon";
             this.label_bh_mahoadon.Size = new System.Drawing.Size(101, 16);
@@ -324,7 +322,7 @@
             this.label_makh.BackColor = System.Drawing.Color.Transparent;
             this.label_makh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_makh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label_makh.Location = new System.Drawing.Point(20, 92);
+            this.label_makh.Location = new System.Drawing.Point(12, 88);
             this.label_makh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_makh.Name = "label_makh";
             this.label_makh.Size = new System.Drawing.Size(105, 16);
@@ -338,7 +336,7 @@
             this.label_bh_ngaytao.BackColor = System.Drawing.Color.Transparent;
             this.label_bh_ngaytao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_bh_ngaytao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label_bh_ngaytao.Location = new System.Drawing.Point(636, 13);
+            this.label_bh_ngaytao.Location = new System.Drawing.Point(639, 26);
             this.label_bh_ngaytao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_bh_ngaytao.Name = "label_bh_ngaytao";
             this.label_bh_ngaytao.Size = new System.Drawing.Size(84, 16);
@@ -351,7 +349,7 @@
             this.label_bh_nhanvien.BackColor = System.Drawing.Color.Transparent;
             this.label_bh_nhanvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_bh_nhanvien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label_bh_nhanvien.Location = new System.Drawing.Point(636, 92);
+            this.label_bh_nhanvien.Location = new System.Drawing.Point(599, 68);
             this.label_bh_nhanvien.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_bh_nhanvien.Name = "label_bh_nhanvien";
             this.label_bh_nhanvien.Size = new System.Drawing.Size(124, 16);
@@ -366,7 +364,7 @@
             this.dateTimePicker_bh.Enabled = false;
             this.dateTimePicker_bh.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker_bh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker_bh.Location = new System.Drawing.Point(843, 17);
+            this.dateTimePicker_bh.Location = new System.Drawing.Point(737, 17);
             this.dateTimePicker_bh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePicker_bh.Name = "dateTimePicker_bh";
             this.dateTimePicker_bh.Size = new System.Drawing.Size(249, 30);
@@ -381,11 +379,11 @@
             // textBox_bh_soluong
             // 
             this.textBox_bh_soluong.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_bh_soluong.Location = new System.Drawing.Point(1088, 201);
+            this.textBox_bh_soluong.Location = new System.Drawing.Point(879, 202);
             this.textBox_bh_soluong.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox_bh_soluong.MaxLength = 4;
             this.textBox_bh_soluong.Name = "textBox_bh_soluong";
-            this.textBox_bh_soluong.Size = new System.Drawing.Size(94, 35);
+            this.textBox_bh_soluong.Size = new System.Drawing.Size(107, 35);
             this.textBox_bh_soluong.TabIndex = 17;
             this.textBox_bh_soluong.TextChanged += new System.EventHandler(this.textBox_bh_soluong_TextChanged_1);
             this.textBox_bh_soluong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_bh_soluong_KeyPress);
@@ -396,7 +394,7 @@
             this.label_bh_soluong.BackColor = System.Drawing.Color.Transparent;
             this.label_bh_soluong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_bh_soluong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label_bh_soluong.Location = new System.Drawing.Point(1083, 179);
+            this.label_bh_soluong.Location = new System.Drawing.Point(889, 181);
             this.label_bh_soluong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_bh_soluong.Name = "label_bh_soluong";
             this.label_bh_soluong.Size = new System.Drawing.Size(84, 16);
@@ -410,7 +408,7 @@
             this.label_bh_dongia.BackColor = System.Drawing.Color.Transparent;
             this.label_bh_dongia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_bh_dongia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label_bh_dongia.Location = new System.Drawing.Point(862, 179);
+            this.label_bh_dongia.Location = new System.Drawing.Point(692, 177);
             this.label_bh_dongia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_bh_dongia.Name = "label_bh_dongia";
             this.label_bh_dongia.Size = new System.Drawing.Size(68, 16);
@@ -423,7 +421,7 @@
             this.label_bh_th.BackColor = System.Drawing.Color.Transparent;
             this.label_bh_th.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_bh_th.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label_bh_th.Location = new System.Drawing.Point(411, 179);
+            this.label_bh_th.Location = new System.Drawing.Point(332, 175);
             this.label_bh_th.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_bh_th.Name = "label_bh_th";
             this.label_bh_th.Size = new System.Drawing.Size(120, 16);
@@ -436,7 +434,7 @@
             this.label_bh_mh.BackColor = System.Drawing.Color.Transparent;
             this.label_bh_mh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_bh_mh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label_bh_mh.Location = new System.Drawing.Point(50, 179);
+            this.label_bh_mh.Location = new System.Drawing.Point(42, 175);
             this.label_bh_mh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_bh_mh.Name = "label_bh_mh";
             this.label_bh_mh.Size = new System.Drawing.Size(111, 16);
@@ -511,7 +509,7 @@
             this.comboBox_bh_tennv.FormattingEnabled = true;
             this.comboBox_bh_tennv.IntegralHeight = false;
             this.comboBox_bh_tennv.ItemHeight = 24;
-            this.comboBox_bh_tennv.Location = new System.Drawing.Point(843, 97);
+            this.comboBox_bh_tennv.Location = new System.Drawing.Point(737, 57);
             this.comboBox_bh_tennv.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox_bh_tennv.Name = "comboBox_bh_tennv";
             this.comboBox_bh_tennv.Size = new System.Drawing.Size(249, 32);
@@ -526,7 +524,7 @@
             this.comboBox_bh_mahd.FormattingEnabled = true;
             this.comboBox_bh_mahd.IntegralHeight = false;
             this.comboBox_bh_mahd.ItemHeight = 24;
-            this.comboBox_bh_mahd.Location = new System.Drawing.Point(246, 9);
+            this.comboBox_bh_mahd.Location = new System.Drawing.Point(136, 5);
             this.comboBox_bh_mahd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox_bh_mahd.Name = "comboBox_bh_mahd";
             this.comboBox_bh_mahd.Size = new System.Drawing.Size(238, 36);
@@ -542,7 +540,7 @@
             this.comboBox_bh_makh.FormattingEnabled = true;
             this.comboBox_bh_makh.IntegralHeight = false;
             this.comboBox_bh_makh.ItemHeight = 24;
-            this.comboBox_bh_makh.Location = new System.Drawing.Point(246, 92);
+            this.comboBox_bh_makh.Location = new System.Drawing.Point(136, 88);
             this.comboBox_bh_makh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox_bh_makh.Name = "comboBox_bh_makh";
             this.comboBox_bh_makh.Size = new System.Drawing.Size(238, 32);
@@ -557,10 +555,10 @@
             this.comboBox_bh_mh.FormattingEnabled = true;
             this.comboBox_bh_mh.IntegralHeight = false;
             this.comboBox_bh_mh.ItemHeight = 24;
-            this.comboBox_bh_mh.Location = new System.Drawing.Point(24, 206);
+            this.comboBox_bh_mh.Location = new System.Drawing.Point(16, 202);
             this.comboBox_bh_mh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox_bh_mh.Name = "comboBox_bh_mh";
-            this.comboBox_bh_mh.Size = new System.Drawing.Size(238, 32);
+            this.comboBox_bh_mh.Size = new System.Drawing.Size(208, 32);
             this.comboBox_bh_mh.TabIndex = 33;
             this.comboBox_bh_mh.SelectedIndexChanged += new System.EventHandler(this.comboBox_bh_mh_SelectedIndexChanged);
             // 
@@ -572,10 +570,10 @@
             this.comboBox_bh_tenhang.FormattingEnabled = true;
             this.comboBox_bh_tenhang.IntegralHeight = false;
             this.comboBox_bh_tenhang.ItemHeight = 24;
-            this.comboBox_bh_tenhang.Location = new System.Drawing.Point(327, 206);
+            this.comboBox_bh_tenhang.Location = new System.Drawing.Point(248, 202);
             this.comboBox_bh_tenhang.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox_bh_tenhang.Name = "comboBox_bh_tenhang";
-            this.comboBox_bh_tenhang.Size = new System.Drawing.Size(414, 32);
+            this.comboBox_bh_tenhang.Size = new System.Drawing.Size(368, 32);
             this.comboBox_bh_tenhang.TabIndex = 34;
             this.comboBox_bh_tenhang.SelectedIndexChanged += new System.EventHandler(this.comboBox_bh_tenhang_SelectedIndexChanged);
             // 
@@ -589,7 +587,7 @@
             this.comboBox_bh_dg.FormattingEnabled = true;
             this.comboBox_bh_dg.IntegralHeight = false;
             this.comboBox_bh_dg.ItemHeight = 24;
-            this.comboBox_bh_dg.Location = new System.Drawing.Point(801, 204);
+            this.comboBox_bh_dg.Location = new System.Drawing.Point(631, 202);
             this.comboBox_bh_dg.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox_bh_dg.Name = "comboBox_bh_dg";
             this.comboBox_bh_dg.Size = new System.Drawing.Size(217, 45);
@@ -609,6 +607,7 @@
             // 
             // button_bh_luu
             // 
+            this.button_bh_luu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button_bh_luu.BackColor = System.Drawing.Color.Transparent;
             this.button_bh_luu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_bh_luu.FlatAppearance.BorderColor = System.Drawing.Color.Tan;
@@ -619,10 +618,10 @@
             this.button_bh_luu.ForeColor = System.Drawing.Color.Lime;
             this.button_bh_luu.Image = global::UI.Properties.Resources.Save_as_icon;
             this.button_bh_luu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_bh_luu.Location = new System.Drawing.Point(1114, 74);
+            this.button_bh_luu.Location = new System.Drawing.Point(1044, 90);
             this.button_bh_luu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button_bh_luu.Name = "button_bh_luu";
-            this.button_bh_luu.Size = new System.Drawing.Size(171, 65);
+            this.button_bh_luu.Size = new System.Drawing.Size(135, 65);
             this.button_bh_luu.TabIndex = 38;
             this.button_bh_luu.Text = "Lưu";
             this.button_bh_luu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -635,7 +634,7 @@
             this.radioButton_kbt.BackColor = System.Drawing.Color.Transparent;
             this.radioButton_kbt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton_kbt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.radioButton_kbt.Location = new System.Drawing.Point(246, 92);
+            this.radioButton_kbt.Location = new System.Drawing.Point(136, 88);
             this.radioButton_kbt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton_kbt.Name = "radioButton_kbt";
             this.radioButton_kbt.Size = new System.Drawing.Size(188, 28);
@@ -651,7 +650,7 @@
             this.radioButton_ktt.BackColor = System.Drawing.Color.Transparent;
             this.radioButton_ktt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton_ktt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.radioButton_ktt.Location = new System.Drawing.Point(246, 131);
+            this.radioButton_ktt.Location = new System.Drawing.Point(136, 127);
             this.radioButton_ktt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton_ktt.Name = "radioButton_ktt";
             this.radioButton_ktt.Size = new System.Drawing.Size(210, 28);
@@ -670,7 +669,7 @@
             this.comboBox_bh_tenkh.FormattingEnabled = true;
             this.comboBox_bh_tenkh.IntegralHeight = false;
             this.comboBox_bh_tenkh.ItemHeight = 24;
-            this.comboBox_bh_tenkh.Location = new System.Drawing.Point(246, 50);
+            this.comboBox_bh_tenkh.Location = new System.Drawing.Point(136, 46);
             this.comboBox_bh_tenkh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox_bh_tenkh.Name = "comboBox_bh_tenkh";
             this.comboBox_bh_tenkh.Size = new System.Drawing.Size(344, 32);
@@ -679,6 +678,7 @@
             // 
             // button_bh_quaylai
             // 
+            this.button_bh_quaylai.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button_bh_quaylai.BackColor = System.Drawing.Color.Transparent;
             this.button_bh_quaylai.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_bh_quaylai.FlatAppearance.BorderColor = System.Drawing.Color.Tan;
@@ -688,58 +688,51 @@
             this.button_bh_quaylai.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_bh_quaylai.ForeColor = System.Drawing.Color.Lime;
             this.button_bh_quaylai.Image = global::UI.Properties.Resources._48px_Crystal_Clear_action_reload;
-            this.button_bh_quaylai.Location = new System.Drawing.Point(1696, 13);
+            this.button_bh_quaylai.Location = new System.Drawing.Point(1330, 16);
             this.button_bh_quaylai.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button_bh_quaylai.Name = "button_bh_quaylai";
-            this.button_bh_quaylai.Size = new System.Drawing.Size(128, 68);
+            this.button_bh_quaylai.Size = new System.Drawing.Size(92, 68);
             this.button_bh_quaylai.TabIndex = 50;
             this.button_bh_quaylai.UseVisualStyleBackColor = false;
             this.button_bh_quaylai.Click += new System.EventHandler(this.button_bh_quaylai_Click);
-            // 
-            // ribbonControl1
-            // 
-            this.ribbonControl1.ExpandCollapseItem.Id = 0;
-            this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbonControl1.ExpandCollapseItem,
-            this.ribbonControl1.SearchEditItem});
-            this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 1;
-            this.ribbonControl1.Name = "ribbonControl1";
-            this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.ribbonPage1});
-            this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.MacOffice;
-            this.ribbonControl1.Size = new System.Drawing.Size(1298, 133);
-            this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
-            // 
-            // ribbonPage1
-            // 
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1,
-            this.ribbonPageGroup2});
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "ribbonPage1";
-            // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
-            // 
-            // ribbonPageGroup2
-            // 
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "ribbonPageGroup2";
-            // 
-            // ribbonStatusBar1
-            // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 681);
-            this.ribbonStatusBar1.Name = "ribbonStatusBar1";
-            this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(1298, 27);
             // 
             // ribbonPage2
             // 
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "ribbonPage2";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.comboBox_bh_mahd);
+            this.panel1.Controls.Add(this.button_bh_quaylai);
+            this.panel1.Controls.Add(this.button_bh_them);
+            this.panel1.Controls.Add(this.comboBox_bh_tenkh);
+            this.panel1.Controls.Add(this.button_bh_sua);
+            this.panel1.Controls.Add(this.radioButton_ktt);
+            this.panel1.Controls.Add(this.button_bh_xoa);
+            this.panel1.Controls.Add(this.radioButton_kbt);
+            this.panel1.Controls.Add(this.textBox_bh_soluong);
+            this.panel1.Controls.Add(this.button_bh_luu);
+            this.panel1.Controls.Add(this.label_bh_soluong);
+            this.panel1.Controls.Add(this.label_bh_dongia);
+            this.panel1.Controls.Add(this.comboBox_bh_dg);
+            this.panel1.Controls.Add(this.label_bh_mahoadon);
+            this.panel1.Controls.Add(this.comboBox_bh_tenhang);
+            this.panel1.Controls.Add(this.label_makh);
+            this.panel1.Controls.Add(this.comboBox_bh_mh);
+            this.panel1.Controls.Add(this.label_bh_ngaytao);
+            this.panel1.Controls.Add(this.comboBox_bh_makh);
+            this.panel1.Controls.Add(this.label_bh_th);
+            this.panel1.Controls.Add(this.label_bh_nhanvien);
+            this.panel1.Controls.Add(this.comboBox_bh_tennv);
+            this.panel1.Controls.Add(this.label_bh_mh);
+            this.panel1.Controls.Add(this.dateTimePicker_bh);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1442, 280);
+            this.panel1.TabIndex = 51;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // BanHang
             // 
@@ -748,44 +741,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Tile;
-            this.BackgroundImageStore = global::UI.Properties.Resources.gray;
-            this.ClientSize = new System.Drawing.Size(1298, 708);
-            this.Controls.Add(this.button_bh_quaylai);
-            this.Controls.Add(this.comboBox_bh_tenkh);
-            this.Controls.Add(this.radioButton_ktt);
-            this.Controls.Add(this.radioButton_kbt);
-            this.Controls.Add(this.button_bh_luu);
+            this.ClientSize = new System.Drawing.Size(1442, 708);
+            this.Controls.Add(this.dataGridView_bh);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.comboBox_bh_donvi);
-            this.Controls.Add(this.comboBox_bh_dg);
-            this.Controls.Add(this.comboBox_bh_tenhang);
-            this.Controls.Add(this.comboBox_bh_mh);
-            this.Controls.Add(this.comboBox_bh_makh);
-            this.Controls.Add(this.comboBox_bh_mahd);
-            this.Controls.Add(this.comboBox_bh_tennv);
             this.Controls.Add(this.label_bh_tt);
             this.Controls.Add(this.textBox_tienthua);
             this.Controls.Add(this.label_bh_kd);
             this.Controls.Add(this.textBox_khachdua);
-            this.Controls.Add(this.dateTimePicker_bh);
-            this.Controls.Add(this.label_bh_mh);
-            this.Controls.Add(this.label_bh_nhanvien);
-            this.Controls.Add(this.label_bh_th);
-            this.Controls.Add(this.label_bh_ngaytao);
-            this.Controls.Add(this.label_makh);
-            this.Controls.Add(this.label_bh_mahoadon);
-            this.Controls.Add(this.label_bh_dongia);
-            this.Controls.Add(this.label_bh_soluong);
-            this.Controls.Add(this.textBox_bh_soluong);
             this.Controls.Add(this.button_bh_thanhtoan);
             this.Controls.Add(this.label_tongcong);
             this.Controls.Add(this.textBox_tongtien);
-            this.Controls.Add(this.button_bh_xoa);
-            this.Controls.Add(this.button_bh_sua);
-            this.Controls.Add(this.button_bh_them);
-            this.Controls.Add(this.dataGridView_bh);
-            this.Controls.Add(this.ribbonStatusBar1);
-            this.Controls.Add(this.ribbonControl1);
             this.IconOptions.Icon = ((System.Drawing.Icon)(resources.GetObject("BanHang.IconOptions.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "BanHang";
@@ -795,7 +761,8 @@
             this.Load += new System.EventHandler(this.BanHang_Load);
             this.Click += new System.EventHandler(this.BanHang_Click);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_bh)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -843,11 +810,7 @@
         private System.Windows.Forms.RadioButton radioButton_ktt;
         private System.Windows.Forms.ComboBox comboBox_bh_tenkh;
         private System.Windows.Forms.Button button_bh_quaylai;
-        private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
-        private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
+        private System.Windows.Forms.Panel panel1;
     }
 }
